@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import AppRoutes from "./Routes";
+import { QueryClientProvider, QueryClient } from "react-query";
+
+import "./App.scss";
 
 function App() {
+  // we use refetchOnWindowFocus: false to stop react query from fetching on every action the the page
+  const queryClinet = new QueryClient({defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },});
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClinet}>
+      <div className="main-container">
+        <nav className="navbar">Fixed Users</nav>
+        <div className="content-section">
+          <AppRoutes />
+        </div>
+      </div>
+    </QueryClientProvider>
   );
 }
 

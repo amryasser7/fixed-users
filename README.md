@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Fixed Users
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app shows users and there posts
 
-## Available Scripts
+## `Project Description`
 
-In the project directory, you can run:
+The app shows number of users in a card view grid, each card has the users data and a button to show the users posts in another page.
 
-### `npm start`
+Posts page is a list of accordions that shows the title and opens up to shows the post body. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## `Technologies`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This app is created with react using (create-react-app)
 
-### `npm test`
+we used the following libraries to help us with the app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1-react-router-dom: this lib help us with routing between pages through the client side. (to install use `npm i -D react-router-dom` )
 
-### `npm run build`
+2-axios: this lib help us with calling http requests. (to install use `npm install axios`)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3-react query: this lib is used with axios for better experience when fetching the data it helps us with what state is the request in now and if there is any error while getting the data. (to install use `npm install react-query`)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4-scss: we used sass as our preprocesser of our styles. (to install use `npm i sass`)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## `How to use the app?`
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+when you open the browser the list of users will be fetched and displayed in the card view grid, you can scroll in the grid to display the card you want, on clicking on the posts button you will see a list of posts for the user you selected with only the title visable on clicking on the title the body of the post is displayed and you can read the post.
