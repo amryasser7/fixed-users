@@ -24,4 +24,8 @@ we used the following libraries to help us with the app
 
 ## `How to use the app?`
 
+first run `npm start` this will open you browser on http://localhost:3000.
+
+You can also run the app on the deployed URL https://usersposts.vercel.app/
+
 when you open the browser the list of users will be fetched and displayed in the card view grid, you can scroll in the grid to display the card you want, on clicking on the posts button you will see a list of posts for the user you selected with only the title visable on clicking on the title the body of the post is displayed and you can read the post.
